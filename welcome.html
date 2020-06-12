@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống cơ sở dữ liệu ngành thủy lợi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'RobotoRegular', 'sans-serif';
+        }
+
+        @font-face {
+            font-family: 'RobotoRegular';
+            src: url('./fonts/Roboto-Regular.ttf'); 
+        }
+
+        .main-welcome {
+            background-image: url('./images/son-la-thuy-dien-chieu.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            padding-top: 40px;
+        }
+
+        .panel-content {
+            width: 70%;
+            height: 90%;
+            position: relative;
+            margin: auto;
+        }
+
+        .main-title {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            text-align: center;
+        }
+        
+        .logo-tnmt {
+            width: 240px;
+            position: absolute;
+            top: 25%;
+            left: 17%;
+        }
+
+        .env-vector {
+            width: 200px;
+            position: absolute;
+            bottom: -20px;
+        }
+
+        .welcome-menu {
+            position: absolute;
+            top: 15%;
+            left: 55%;
+            width: 304px;
+        }
+
+        .welcome-menu .menu-item {
+            background-color: rgb(3, 82, 145);
+            margin: 0 0 10px 0;
+            color: #fff;
+            border-radius: 4px;
+            height: 45px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .welcome-menu .menu-item:hover {
+            background-color: #146cb3;
+            margin-left: 15px;
+            width: 101%;
+        }
+
+        .welcome-menu .menu-item .item-image {
+            width: 30px;
+            float: left;
+            height: 30px;
+            background-size: cover;
+            border-radius: 50%;
+            margin: 8px 10px 5px 5px;
+        }
+
+        .welcome-menu .menu-item .item-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .welcome-menu .menu-item .item-text {
+            line-height: 45px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main-welcome">
+        <div class="panel-content">
+            <h2 class="main-title">QUẢN LÝ GIÁM SÁT, KHAI THÁC SỬ DỤNG TÀI NGUYÊN VÀ MÔI TRƯỜNG</h2>
+            <img src="./images/logo-tnmt.png" alt="logo-tai-nguyen-moi-truong" class="logo-tnmt">
+            <!-- <img src="./images/environment-vector.png" alt="env-vector" class="env-vector"> -->
+            <div class="welcome-menu">
+                <div class="menu-item">
+                    <div class="item-image icon-land"><img src="./images/icon/land-icon.png" alt="land-icon"></div>
+                    <div class="item-text">Đất đai</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-water"><img src="./images/icon/water-icon.png" alt="water-icon"></div>
+                    <div class="item-text">Tài nguyên nước</div>
+                </div>
+                <div class="menu-item icon-meteor">
+                    <div class="item-image"><img src="./images/icon/meteorology-icon.png" alt="meteorology-icon"></div>
+                    <div class="item-text">Khí tượng thủy văn</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-geo"><img src="./images/icon/geology-icon.png" alt="geology-icon"></div>
+                    <div class="item-text">Địa chất khoáng sản</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-env"><img src="./images/icon/env-icon.png" alt="env-icon"></div>
+                    <div class="item-text">Môi trường</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-map"><img src="./images/icon/map-icon.png" alt="map-icon"></div>
+                    <div class="item-text">Đo đạc bản đồ và thông tin địa lý</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-climate"><img src="./images/icon/global-icon.png" alt="global-icon"></div>
+                    <div class="item-text">Biến đổi khí hậu</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-image icon-explore"><img src="./images/icon/compass-icon.png" alt="compass-icon"></div>
+                    <div class="item-text">Viễn thám</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
