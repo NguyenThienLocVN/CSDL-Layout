@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -37,11 +37,11 @@
     <style>
         .image-left-login {
             width: 400px;
-            height: 430px;
+            height: 450px;
         }
 
         .content-right-login {
-            height: 430px;
+            height: 450px;
         }
 
         .logo-tnmt-opacity {
@@ -75,7 +75,9 @@
             </div>
             <div class="content-body">
                 <section class="row flexbox-container">
-                    <div class="col-xl-8 col-11 d-flex justify-content-center">
+                    <h2 class="title-login font-weight-bold text-center pt-3">SỞ TÀI NGUYÊN VÀ MÔI TRƯỜNG TỈNH SƠN LA</h2>
+                    <div class="col-xl-8 col-11 mb-5 d-flex justify-content-center">
+                        
                         <div class="card bg-authentication rounded-0 mb-0">
                             <div class="row m-0">
                                 <div class="col-lg-6 d-lg-block d-none text-center align-self-center p-0">
@@ -92,7 +94,7 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <div class="card-header pb-1 mt-1">
+                                        <div class="card-header">
                                             <div class="card-title">
                                                 <h4 class="mb-0">Đăng nhập</h4>
                                             </div>
@@ -116,7 +118,23 @@
                                                         </div>
                                                         <label for="user-password">Password</label>
                                                     </fieldset>
-                                                    <button type="submit" class="btn btn-primary float-right btn-inline waves-effect waves-light mb-2">Login</button>
+                                                    <div class="form-group d-flex justify-content-between align-items-center">
+                                                        <div class="text-left">
+                                                            <fieldset class="checkbox">
+                                                                <div class="vs-checkbox-con vs-checkbox-primary">
+                                                                    <input type="checkbox">
+                                                                    <span class="vs-checkbox">
+                                                                        <span class="vs-checkbox--check">
+                                                                            <i class="fa fa-check text-light" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="">Ghi nhớ</span>
+                                                                </div>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <a href="register.html" class="btn btn-outline-primary float-left btn-inline waves-effect waves-light">Đăng ký</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline waves-effect waves-light mb-2">Đăng nhập</button>
                                                 </form>
                                             </div>
                                         </div>

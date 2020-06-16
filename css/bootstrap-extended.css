@@ -377,7 +377,6 @@ select.form-control:not([multiple="multiple"]) {
     height: 20px;
     border-width: 2px;
     border-style: solid;
-    border-color: #b8c2cc;
     border-radius: 2px;
     transform: rotate(-90deg);
     transition: all .2s ease;

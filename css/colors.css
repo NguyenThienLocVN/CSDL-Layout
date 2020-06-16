@@ -1225,13 +1225,14 @@ input:focus ~ .bg-primary {
   background: rgba(115, 103, 240, 0.6); }
 
 .btn-primary {
-  border-color: #4839eb !important;
-  background-color: #7367f0 !important;
+  border-color: #0060ad !important;
+  background-color: #0060ad !important;
   color: #fff; }
   .btn-primary:hover {
-    border-color: #5e50ee !important;
+    background-color: #035291 !important;
+    border-color: #035291 !important;
     color: #fff !important;
-    box-shadow: 0 8px 25px -8px #7367f0; }
+    box-shadow: 0 8px 25px -8px #035291; }
   .btn-primary:focus, .btn-primary:active {
     color: #fff !important; }
 
@@ -1348,15 +1349,15 @@ input:focus ~ .bg-primary {
   box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.21rem #7367f0 !important; }
 
 .vs-checkbox-primary input:checked ~ .vs-checkbox {
-  border-color: #7367f0 !important; }
+  border-color: #0060ad !important; }
   .vs-checkbox-primary input:checked ~ .vs-checkbox .vs-checkbox--check {
-    background-color: #7367f0 !important; }
+    background-color: #0060ad !important; }
 
 .vs-checkbox-primary input:active:checked + .vs-checkbox .vs-checkbox--check {
-  background-color: #7367f0 !important; }
+  background-color: #0060ad !important; }
 
 .custom-switch-primary .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #7367f0 !important;
+  background-color: #0060ad !important;
   color: #fff;
   transition: all .2s ease-out; }
 

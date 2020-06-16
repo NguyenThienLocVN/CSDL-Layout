@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ thống cơ sở dữ liệu ngành thủy lợi</title>
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./css/colors.css">
+    <link rel="stylesheet" type="text/css" href="./css/components.css">
+    <link rel="stylesheet" type="text/css" href="./css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="./css/pages/authentication.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <style>
         * {
             box-sizing: border-box;
@@ -26,55 +43,40 @@
             height: 100vh;
             width: 100vw;
             position: relative;
-            padding-top: 40px;
         }
 
         .panel-content {
-            width: 70%;
+            width: 90%;
             height: 90%;
             position: relative;
             margin: auto;
         }
-
-        .main-title {
-            position: absolute;
-            top: 0;
-            left: 10%;
-            text-align: center;
-        }
         
         .logo-tnmt {
-            width: 240px;
+            /* width: 240px;
             position: absolute;
             top: 25%;
-            left: 17%;
-        }
-
-        .env-vector {
-            width: 200px;
-            position: absolute;
-            bottom: -20px;
+            left: 17%; */
         }
 
         .welcome-menu {
-            position: absolute;
+            /* position: absolute;
             top: 15%;
-            left: 55%;
-            width: 304px;
+            right: 0; */
         }
 
         .welcome-menu .menu-item {
-            background-color: rgb(3, 82, 145);
+            background-color: rgb(4, 87, 155);
             margin: 0 0 10px 0;
             color: #fff;
             border-radius: 4px;
-            height: 45px;
+            height: 50px;
             cursor: pointer;
             transition: 1s;
         }
 
         .welcome-menu .menu-item:hover {
-            background-color: #146cb3;
+            background-color: #054477;
             margin-left: 15px;
             width: 101%;
         }
@@ -94,18 +96,28 @@
         }
 
         .welcome-menu .menu-item .item-text {
-            line-height: 45px;
+            line-height: 50px;
+            font-size: 19px;
         }
 
     </style>
 </head>
 <body>
-    <main class="main-welcome">
-        <div class="panel-content">
-            <h2 class="main-title">QUẢN LÝ GIÁM SÁT, KHAI THÁC SỬ DỤNG TÀI NGUYÊN VÀ MÔI TRƯỜNG</h2>
-            <img src="./images/logo-tnmt.png" alt="logo-tai-nguyen-moi-truong" class="logo-tnmt">
-            <!-- <img src="./images/environment-vector.png" alt="env-vector" class="env-vector"> -->
-            <div class="welcome-menu">
+    <main class="main-welcome container-fluid">
+        <div class="d-flex align-items-start">
+            <div class="col-sm-2 pt-1 logo-tnmt">
+                <img src="./images/logo-tnmt.png" alt="logo-tai-nguyen-moi-truong" class="col-sm-10 px-0">
+            </div>
+            <h2 class="col-sm-8 pt-2 text-center font-weight-bold">HỆ THỐNG QUẢN LÝ GIÁM SÁT, KHAI THÁC SỬ DỤNG <br> TÀI NGUYÊN VÀ MÔI TRƯỜNG <br><br><u>TỈNH SƠN LA</u></h2>
+        </div>
+        <div class="d-flex">
+            <div class="col-sm-8 d-flex align-items-end">
+                <p>Mọi ý kiến đóng góp xin vui lòng gửi tới địa chỉ: </p><br>
+                <p>Phòng Tài nguyên nước, KTTV và BĐKH - Sở Tài nguyên và Môi trường</p><br>
+                <p>Email: </p><br>
+                <p>Điện thoại: </p>
+            </div>
+            <div class="welcome-menu col-sm-4 col-md-6 col-lg-4 float-right">
                 <div class="menu-item">
                     <div class="item-image icon-land"><img src="./images/icon/land-icon.png" alt="land-icon"></div>
                     <div class="item-text">Đất đai</div>
