@@ -18,12 +18,6 @@
   #dashboard-analytics .bg-analytics .avatar {
     margin-bottom: 2rem; }
 
-#dashboard-analytics table tr th:first-child, #dashboard-analytics table tr td:first-child {
-  padding-left: 2rem; }
-
-#dashboard-analytics table tr th:last-child, #dashboard-analytics table tr td:last-child {
-  padding-right: 2rem; }
-
 #dashboard-analytics table td {
   padding: .75rem; }
 

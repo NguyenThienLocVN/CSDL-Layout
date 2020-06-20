@@ -40,29 +40,7 @@
         .main-welcome {
             background-image: url('./images/son-la-thuy-dien-chieu.jpg');
             background-size: cover;
-            height: 100vh;
-            width: 100vw;
             position: relative;
-        }
-
-        .panel-content {
-            width: 90%;
-            height: 90%;
-            position: relative;
-            margin: auto;
-        }
-        
-        .logo-tnmt {
-            /* width: 240px;
-            position: absolute;
-            top: 25%;
-            left: 17%; */
-        }
-
-        .welcome-menu {
-            /* position: absolute;
-            top: 15%;
-            right: 0; */
         }
 
         .welcome-menu .menu-item {
@@ -70,15 +48,15 @@
             margin: 0 0 10px 0;
             color: #fff;
             border-radius: 4px;
-            height: 50px;
+            height: 48px;
             cursor: pointer;
             transition: 1s;
         }
 
         .welcome-menu .menu-item:hover {
             background-color: #054477;
-            margin-left: 15px;
-            width: 101%;
+            margin-left: -15px;
+            width: 100%;
         }
 
         .welcome-menu .menu-item .item-image {
@@ -96,59 +74,74 @@
         }
 
         .welcome-menu .menu-item .item-text {
-            line-height: 50px;
-            font-size: 19px;
+            line-height: 48px;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            .welcome-menu .menu-item .item-text {font-size: 19px;}
+            .main-welcome {height: 100vh;}
+        }
+
+        @media screen and (min-width: 1024px)
+        {
+            
         }
 
     </style>
 </head>
 <body>
-    <main class="main-welcome container-fluid">
-        <div class="d-flex align-items-start">
-            <div class="col-sm-2 pt-1 logo-tnmt">
-                <img src="./images/logo-tnmt.png" alt="logo-tai-nguyen-moi-truong" class="col-sm-10 px-0">
+    <main class="main-welcome container-lg">
+        <div class="d-flex flex-column flex-md-row align-items-start">
+            <div class="col-12 col-sm-2 pt-1 px-2 text-center logo-tnmt">
+                <img src="./images/logo-tnmt.png" alt="logo-tai-nguyen-moi-truong" class="col-8 col-sm-10 px-0">
             </div>
-            <h2 class="col-sm-8 pt-2 text-center font-weight-bold">HỆ THỐNG QUẢN LÝ GIÁM SÁT, KHAI THÁC SỬ DỤNG <br> TÀI NGUYÊN VÀ MÔI TRƯỜNG <br><br><u>TỈNH SƠN LA</u></h2>
+            <div class="col-sm-8 pt-2 text-center pb-3">
+                <h4 class="font-weight-bold text-white">SỞ TÀI NGUYÊN MÔI TRƯỜNG TỈNH SƠN LA </h4>
+                <h2 class="font-weight-bold text-white">HỆ THỐNG QUẢN LÝ GIÁM SÁT, KHAI THÁC SỬ DỤNG</h2> 
+                <h2 class="font-weight-bold text-white">TÀI NGUYÊN VÀ MÔI TRƯỜNG</h2></div>
         </div>
-        <div class="d-flex">
-            <div class="col-sm-8 d-flex align-items-end">
-                <p>Mọi ý kiến đóng góp xin vui lòng gửi tới địa chỉ: </p><br>
-                <p>Phòng Tài nguyên nước, KTTV và BĐKH - Sở Tài nguyên và Môi trường</p><br>
-                <p>Email: </p><br>
+        <div class="d-flex flex-column flex-md-row">
+            <div class="col-lg-8 col-md-6 d-flex flex-column col-12 justify-content-end text-white order-2 py-2 py-md-0 order-md-1">
+                <p>Mọi ý kiến đóng góp xin vui lòng gửi tới địa chỉ: </p>
+                <p>Phòng Tài nguyên nước, KTTV và BĐKH - Sở Tài nguyên và Môi trường</p>
+                <p>Email: </p>
                 <p>Điện thoại: </p>
             </div>
-            <div class="welcome-menu col-sm-4 col-md-6 col-lg-4 float-right">
+            <div class="welcome-menu col-md-6 col-lg-4 order-md-2">
                 <div class="menu-item">
                     <div class="item-image icon-land"><img src="./images/icon/land-icon.png" alt="land-icon"></div>
-                    <div class="item-text">Đất đai</div>
+                    <a href="" class="item-text">Đất đai</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-water"><img src="./images/icon/water-icon.png" alt="water-icon"></div>
-                    <div class="item-text">Tài nguyên nước</div>
+                    <a href="tai-nguyen-nuoc.html" class="item-text">Tài nguyên nước</a>
                 </div>
                 <div class="menu-item icon-meteor">
                     <div class="item-image"><img src="./images/icon/meteorology-icon.png" alt="meteorology-icon"></div>
-                    <div class="item-text">Khí tượng thủy văn</div>
+                    <a href="" class="item-text">Khí tượng thủy văn</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-geo"><img src="./images/icon/geology-icon.png" alt="geology-icon"></div>
-                    <div class="item-text">Địa chất khoáng sản</div>
+                    <a href="" class="item-text">Địa chất khoáng sản</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-env"><img src="./images/icon/env-icon.png" alt="env-icon"></div>
-                    <div class="item-text">Môi trường</div>
+                    <a href="" class="item-text">Môi trường</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-map"><img src="./images/icon/map-icon.png" alt="map-icon"></div>
-                    <div class="item-text">Đo đạc bản đồ và thông tin địa lý</div>
+                    <a href="" class="item-text">Đo đạc bản đồ và thông tin địa lý</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-climate"><img src="./images/icon/global-icon.png" alt="global-icon"></div>
-                    <div class="item-text">Biến đổi khí hậu</div>
+                    <a href="" class="item-text">Biến đổi khí hậu</a>
                 </div>
                 <div class="menu-item">
                     <div class="item-image icon-explore"><img src="./images/icon/compass-icon.png" alt="compass-icon"></div>
-                    <div class="item-text">Viễn thám</div>
+                    <a href="" class="item-text">Viễn thám</a>
                 </div>
             </div>
         </div>

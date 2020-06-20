@@ -49,16 +49,18 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-brand .b
   animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; }
 
 body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
-  width: 260px; }
+  width: 288px; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation .navigation-header .icon-minus {
     display: none; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i {
     margin-right: 1rem;
-    float: left; }
+    float: left;
+    width: 10%;
+    text-align: center; }
     body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i:before {
       font-size: 1.429rem; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > span {
-    animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; }
+    animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; font-size: 13px;}
     body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > span.badge {
       position: absolute;
       right: 20px; }
