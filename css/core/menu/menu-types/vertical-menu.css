@@ -49,7 +49,7 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .navbar .navbar-brand .b
   animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; }
 
 body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
-  width: 288px; }
+  width: 280px; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation .navigation-header .icon-minus {
     display: none; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i {

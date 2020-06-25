@@ -928,27 +928,18 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content ps ps--active-y">
             <ul class="navigation navigation-main mt-2" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item has-sub">
+                <li class="nav-item has-sub active">
                     <a href="#"><i class="fa fa-tint" aria-hidden="true"></i><span class="menu-title" data-i18n="Chat">Trữ lượng tài nguyên nước</span></a>
                     <ul class="menu-content">
                         <li class="is-shown"><a href="tru-luong-tai-nguyen-nuoc-mua.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Nước mưa</span></a>
                         </li>
                         <li class="is-shown"><a href="tru-luong-tai-nguyen-nuoc-mat.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Nước mặt</span></a>
                         </li>
-                        <li class="is-shown"><a href="tru-luong-tai-nguyen-nuoc-duoi-dat.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Nước dưới đất</span></a>
+                        <li class="is-shown active"><a href="tru-luong-tai-nguyen-nuoc-duoi-dat.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Nước dưới đất</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-sub">
-                    <a href="#"><i class="fa fa-road" aria-hidden="true"></i><span class="menu-title" data-i18n="Email">Giám sát, khai thác sử dụng</span></a>
-                    <ul class="menu-content">
-                        <li class="is-shown"><a href="#"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Sub menu 1</span></a>
-                        </li>
-                        <li class="is-shown"><a href="#"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Sub menu 2</span></a>
-                        </li>
-                        <li class="is-shown"><a href="#"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Sub menu 3</span></a>
-                        </li>
-                    </ul>
+                <li class="nav-item"><a href="#"><i class="fa fa-road" aria-hidden="true"></i><span class="menu-title" data-i18n="Email">Giám sát, khai thác sử dụng</span></a>
                 </li>
                 <li class="nav-item"><a href="#"><i class="fa fa-recycle" aria-hidden="true"></i><span class="menu-title" data-i18n="Calender">Xả thải vào nguồn nước</span></a>
                 </li>
@@ -983,17 +974,52 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="card">
                                 <div class="card-content">
-                                    <div class="card-body text-left">
+                                    <div class="card-body">
                                         <form action="">
-                                            <h4 class="text-center mb-3">GIỚI THIỆU</h4>
-                                            <ul>
-                                                <li>Xây dựng hệ thống quản lý, giám sát, khai thác sử dụng về Tài nguyên nước của tỉnh Sơn La đảm bảo lưu trữ một cách hệ thống, đầy đủ, dễ dàng tra cứu, sử dụng và cập nhật các thông tin về tài nguyên nước và liên quan phục vụ hiệu quả công tác quản lý nhà nước của địa phương, thúc đẩy quá trình phát triển kinh tế xã hội đất nước cũng như trên địa bàn tỉnh.</li><br>
-                                                <li>Thiết lập giải pháp công nghệ thông tin hiện đại, đảm bảo tương thích với hệ thống cơ sở dữ liệu của Bộ Tài nguyên và Môi trường, và phù hợp tối đa với điều kiện cơ sở hạ tầng kỹ thuật hiện có của Sở Tài nguyên và Môi trường Sơn La; nhằm đảm bảo: lưu trữ, cập nhật, truy xuất dễ dàng, có tính bảo mật cao; chi phí vận hành, bảo trì hợp lý; dễ dàng nâng cấp mở rộng khi cần thiết.</li><br>
-                                                <li>Tạo điều kiện thuận lợi cho các cơ quan, tổ chức, cá nhân có các hoạt động liên quan đến khai thác, sử dụng tài nguyên nước tiếp cận thông tin, khai thác hiệu quả và bền vững tài nguyên nước. </li>
-                                                <br><br>
-                                                <img class="mx-auto d-block w-50" src="./images/thuy-dien-son-la-xa-lu.png" alt="thuy-dien-son-la-xa-lu">
-                                                <i class="text-center d-block">Nhà máy thủy điện Sơn La</i>
-                                            </ul>
+                                            <h4 class="text-center mb-3">TRỮ LƯỢNG TÀI NGUYÊN NƯỚC DƯỚI ĐẤT</h4>
+                                            <div class="table-responsive-sm ">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                          <th scope="col" colspan="8"><h5 class="text-center">Danh sách các trạm khí tượng</h5></th>
+                                                          <th colspan="2" class="text-center"><button title="Thêm" class="btn btn-primary px-1 mr-1"><i class="fa fa-plus" aria-hidden="true"></i></button><button title="Xóa nhiều trạm" class="btn btn-primary px-1"><i class="fa fa-times" aria-hidden="true"></i></button></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <thead>
+                                                        <tr>
+                                                          <th scope="col" ></th>
+                                                          <th scope="col" >STT</th>
+                                                          <th scope="col" style="width: 12%;">Tên trạm</th>
+                                                          <th scope="col" >Tọa độ X / <br> Vĩ độ</th>
+                                                          <th scope="col" >Tọa độ Y / <br> Kinh độ</th>
+                                                          <th scope="col" style="width: 25%;">Vị trí</th>
+                                                          <th scope="col" style="width: 18%;">Đơn vị quản lý</th>
+                                                        </tr>
+                                                    </thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td><input type="checkbox"></td>
+                                                          <td class="text-center">1</td>
+                                                          <td>Yên Châu</td>
+                                                          <td>539.763</td>
+                                                          <td>2197.763</td>
+                                                          <td>Xã Thọ Thanh, Thường Xuân, Tỉnh Thanh Hóa</td>
+                                                          <td colspan="2"></td>
+                                                          <td colspan="2" class="text-center"><a href="chi-tiet-nuoc-mua.html" title="Chi tiết" class="btn text-primary px-1 mr-1"><i class="fa fa-search" aria-hidden="true"></i></a><button title="Xóa trạm" class="btn text-primary px-1"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox"></td>
+                                                            <td class="text-center">2</td>
+                                                            <td>Bá Thượng</td>
+                                                            <td>539.763</td>
+                                                            <td>21997.763</td>
+                                                            <td>Xã Thọ Thanh, Thường Xuân, Tỉnh Thanh Hóa</td>
+                                                            <td colspan="2"></td>
+                                                            <td colspan="2" class="text-center"><button title="Chi tiết" class="btn text-primary px-1 mr-1"><i class="fa fa-search" aria-hidden="true"></i></button><button title="Xóa trạm" class="btn text-primary px-1"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                                                          </tr>
+                                                      </tbody>
+                                                </table>
+                                              </div>
                                         </form>
                                     </div>
                                 </div>
