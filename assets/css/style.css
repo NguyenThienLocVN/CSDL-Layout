@@ -10,6 +10,37 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
+/* Page Tai nguyen nuoc  */
+.logo-text {color: #045596}
+
+/* Menu top */
+.menutop-navigation li { padding: 1.25rem 0;}
+
+.menutop-navigation li:hover .submenutop-navigation {
+	transition: 0.5s;
+	display: block;
+}
+
+
+.submenutop-navigation {
+	display: none;
+	top: 50px;
+	z-index: 1;
+}
+
+.submenutop-navigation li {
+	line-height: 30px;
+    background: white;
+	padding: 5px 10px;
+	transition: 0.5s;
+}
+
+.submenutop-navigation li:hover { 
+	background: #045596;
+}
+
+.submenutop-navigation li:hover a { color: #fff; }
+
 .table-detail-face-water thead, .table-detail-rain-water thead {
     background: #3567c4;
     color: #fff;
@@ -23,6 +54,18 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .table-detail-face-water thead th, .table-detail-rain-water thead th {
 	padding: 5px 0;
 	border-color: #cecece;
+}
+
+.table-storage-rain-water thead tr, .table-detail-rain-water .high-light {background: lightblue !important;}
+
+.table-storage-rain-water tbody .fit-cell {
+	width: 1px;
+	white-space: nowrap;
+}
+
+.table-storage-rain-water tbody td {
+	font-size: 1rem;
+	padding: 5px 10px;
 }
 
 .table-storage-face-water thead th, .table-storage-rain-water thead th, .table-storage-under-water thead th { padding: 10px 0; }

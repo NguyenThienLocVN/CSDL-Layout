@@ -16,9 +16,7 @@ html {
       padding: 0;
       position: relative;
       transition: 300ms ease all;
-      backface-visibility: hidden;
-      min-height: calc(100% - 4rem);
-      margin-left: 280px; }
+      backface-visibility: hidden;}
       html body .content.app-content {
         overflow: hidden; }
         html body .content.app-content.show-overlay .content-overlay {
